@@ -4,23 +4,93 @@
 <head>
     <meta charset="utf-8">
     <title>Joshua Pinckard Robotics Engineer</title>
+    <!--CSS Styling-->
+    <style>
+        body{
+            padding-left: 6rem;
+            padding-right: 6rem;
+            padding-top: 3.5rem;
+            margin-bottom: 30rem;
+            background-color: rgba(84, 215, 84, 0.357);
+            color: rgb(173, 72, 0);
+            flex-wrap: wrap;
+            align-items: flex-start;
+            font-size: 24px;
+            font-family: "Inter", sans-serif;
+            overflow-x: hidden;
+        }
+
+        .Intro{
+            flex: 1 0 100%; 
+            display: flex;
+            align-items: center;
+            align-self: flex-start;
+        }
+
+        .Title{
+            flex: 1 0 100%;
+            display: flex;
+            align-items: left;
+            flex-direction: column;
+            justify-content: center;
+            padding: 6rem;    
+            box-sizing: border-box;      
+            width: 80px;
+            height: 100px;
+        }
+        .Subtitle{
+            font-size: 18px;
+            margin: 2rem;
+            justify-content: center;
+        }
+
+        .Socials{
+            border: 4px solid black;
+            flex: 1 0 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .TriFold{
+            border: 4px solid black;
+            flex: 1 0 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .Avatar{
+            display: flex;
+            padding: 2rem;
+            width: 30%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
 
+<div class="Intro">
 <!--Avatar Section-->
-<img src="Avatar.png" alt="A picture of Josh's Motorcycle" width="250" height="250">
+<img src="Avatar.png" alt="A picture of Josh's Motorcycle" class="Avatar">
+
 <!--Title-->
+<div class = "Title">
 <h1>Joshua Pinckard</h1>
-<h2>Robotics Engineer and AI enthusiast</h2>
+<div class = "Subtitle">
+<h5>Robotics Engineer and AI enthusiast</h5>
+</div>
+</div>
+</div>
+
 
 <!--About Section-->
+<hr />
+<div class="About">
 <h3 id="About"> About: </h3>
-<p>
-    I'm a 4th year Robotics Engineering major pursuing my bachelors at UCR. 
-    I hope to continue my education with a PhD in AI. I enjoy working on various
-    projects in my free time and hanging out with friends. My favorite tv show is
-    Rick and Morty.
+<p>I'm a 4th year Robotics Engineering major pursuing my bachelors at UCR. 
+I hope to continue my education with a PhD in AI. I enjoy working on various
+projects in my free time and hanging out with friends. My favorite tv show is
+Rick and Morty.
 </p>
 
 <!--Work Section-->
@@ -78,9 +148,13 @@
 </table>
 
 <!--Socials Section-->
+<div class="Socials">
 <h3 id="Socials"> Socials </h3>
 <p><a href="https://www.instagram.com/pinckardjosh/">Instagram</a></p>
+</div>
 
+<!--Section for the tripanel view-->
+<div class="TriFold">
 <!--CourseWork Section-->
 <h3 id="Coursework"> Coursework </h3>
 <ul>
@@ -112,5 +186,6 @@
     <li><a href="https://www.facebook.com/drones4now/">Drones-4-Now</a></li>
     <li><a href="https://chromewebstore.google.com/detail/auto-continue-chatgpt/mnjnpoaiohdlolbghkhdnbbccpfjnnch">Chat-GPT Autocontinue</a></li>
 </ul>
+</div>
 </body>
 </html>
