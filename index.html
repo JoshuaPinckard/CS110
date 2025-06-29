@@ -91,7 +91,6 @@
 
         .myTable {
             table-layout:fixed;
-            padding: 2rem;
             border-collapse: collapse;
             border: 6px solid black;
         }
@@ -108,20 +107,34 @@
         .Education {
             padding: 4rem;
         }
+
+        .About-text {
+            padding-bottom: 1.5rem;
+        }
+
+        .Label{
+            text-align: center;
+            padding-top: 1rem;
+        }
     </style>
 </head>
 
 <body>
 
+<!--Create box for the Title, Subtitle, and Avatar-->
 <div class="Intro">
+
 <!--Avatar Section-->
 <img src="Avatar.png" alt="A picture of Josh's Motorcycle" class="Avatar">
 
 <!--Title-->
+<!--Create a box that contains the Title and subtitle-->
 <div class = "Title">
+<!--Create a box for just the Title-->
 <div class="Head">
 <h1>Joshua Pinckard</h1>
 </div>
+<!--Create a box just for the Subtitle-->
 <div class = "Subtitle">
 <h5>Robotics Engineer and AI enthusiast</h5>
 </div>
@@ -129,18 +142,30 @@
 </div>
 
 
-<!--About Section-->
+
+<!--Create a sleek horizontal line-->
 <hr style="border:0; height:2px; background:#000; width:94vw; margin-left: -6.5vw;">
+
+<!--About Section-->
 <div class="About">
 <h3 id="About"> About: </h3>
 </div>
+<div class="About-text">
 <p>I'm a 4th year Robotics Engineering major pursuing my bachelors at UCR. 
 I hope to continue my education with a PhD in AI. I enjoy working on various
 projects in my free time and hanging out with friends. My favorite tv show is
 Rick and Morty.
 </p>
+</div>
+
+<!--Create a sleek horizontal line-->
+<hr style="border:0; height:2px; background:#000; width:94vw; margin-left: -6.5vw;">
 
 <!--Work Section-->
+<!--Create a box for the label of the table-->
+<div class="Label">
+<h3>Work Experiences</h3>
+</div>
 <div class="Work">
 <table class="myTable">
     <colgroup>
@@ -178,7 +203,14 @@ Rick and Morty.
 </table>
 </div>
 
+<!--Create a sleek horizontal line-->
+<hr style="border:0; height:2px; background:#000; width:94vw; margin-left: -6.5vw;">
+
 <!--Education Section-->
+<!--Create a box for the label of the table-->
+<div class="Label">
+<h3>Educational Journey</h3>
+</div>
 <div class = "Education">
 <table class="myTable">
     <thead>
